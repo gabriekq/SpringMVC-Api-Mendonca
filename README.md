@@ -3,14 +3,14 @@ Simple-SpringMVC-API - Exemple
 
 This is a Restful - API that record into a databased, this code also implements the unit test with Junit. 
 This project used the follow libs:
-Spring MVC 4
-Junit 4
-Java 8
-Maven
-JPA
-Hibernate
-MySQL
-Apache Tomcat 8.0
+Spring MVC 4,
+Junit 4,
+Java 8,
+Maven,
+JPA,
+Hibernate,
+MySQL,
+Apache Tomcat 8.0,
 
 The API has the follow methods:
 http://localhost:8080/Projeto-SpringMVC/pessoas
