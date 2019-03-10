@@ -1,8 +1,10 @@
 package com.mendonca.conf;
 
+import javax.servlet.MultipartConfigElement;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import com.mendonca.test.DaoConfTest;
+import javax.servlet.ServletRegistration.Dynamic;
+
 
 public class ServletSpringMVC  extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -24,6 +26,12 @@ public class ServletSpringMVC  extends AbstractAnnotationConfigDispatcherServlet
 		return new String[] {"/"};
 	}
 
+	
+	@Override
+	protected void customizeRegistration(Dynamic registration) {
+	registration.setMultipartConfig(
+	new MultipartConfigElement(""));
+	}
 	
 	
 	
